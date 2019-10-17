@@ -1,0 +1,30 @@
+<div class='card'>
+  <div class='card-header'>
+  <b> {{pageTitle}}</b>
+  </div>
+  <div class='card-body'>
+  <div class='row'>
+  <div class='col-lg-12' style="float:right;margin-bottom:10px;">
+  <input type='text' class="search" [(ngModel)]="search" placeholder="Filter By Name">
+  </div>
+  </div>
+  <div class='table-responsive'>
+  <table class='table'>
+  <thead>
+  <tr>
+  <th>Name</th>
+  <th>NodeID</th>
+  <th>Url's</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor='let i of user | filter:search'>
+  <td><a [routerLink]="['../user/' + i.login]">{{ i.login }}</a></td>
+  <td>{{ i.node_id }}</td>
+  <td>{{ i.url }}</td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  </div>

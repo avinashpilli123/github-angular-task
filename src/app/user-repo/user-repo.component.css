@@ -1,0 +1,22 @@
+.card{
+    background-color: rgb(222, 248, 239);
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    box-shadow: 3px 3px 3px 3px rgba(91, 91, 94, 0.363);
+    }
+    .card-header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-weight: 600;
+    }
+    th{
+    color: rgba(34, 34, 34, 0.822);
+    }
+    .search{
+    border-radius: 10px;
+    font-size:15px;
+    text-align: center;
+    }
